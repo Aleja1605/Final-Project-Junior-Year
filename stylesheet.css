@@ -1,6 +1,9 @@
 body{
     margin: 0;
     font-family: Gotham Book;
+    height: 100%; 
+    position: relative; 
+  
     
 }
 
@@ -111,11 +114,19 @@ body{
     justify-content: center; 
     text-align: center; 
     padding-top: 5rem; 
+    flex: 1; 
+    min-height: 80vh; 
 
     background-image: url("./resources/DSC_7105.bl.f.jpg"); /*links image of columbus downtown as a background to webpage */
     background-size: cover; 
     background-position: center; 
+    position: relative; 
 
+}
+
+.hero_content{
+    position: relative; 
+    max-width: 800px; 
 }
 
 
@@ -127,16 +138,51 @@ body{
 }
 
 .hero_p{
-    color: white; 
-    font-size: 1.5rem; 
-    max-width: 50rem; 
-    text-align: center; 
-    margin-top: 1rem; 
+    color: black; 
+    font-size: 1.2rem; 
+    max-width: 60rem; 
+    text-align: center;  
     padding: 0 2rem; 
     line-height: 1.8; 
+    margin: 1 auto 0  auto; 
+}
+
+.p_wrapper{
+    background-color: white; 
+    padding: 2rem;
+    border-radius: 1rem; 
+    max-width: 60rem;
     margin: 0 auto; 
 }
 
+.hero_content h2{
+    color: white; 
+    font-weight: bolder;
+    font-size: 1.9rem; 
+}
+
+.card{
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.8rem; 
+    border-bottom: 1px solid hsl(275,100%,97%);
+    padding-bottom: 1.5rem;
+}
+
+.card_p{
+    margin: 0; 
+    line-height: 24px; 
+    color: black; 
+    font-size: 16px; 
+    transition: all .3s ease-in-out; 
+}
+
+.hero_container{
+    height: 260px; 
+    width: 100%; 
+    margin: 0 auto; 
+
+}
 
 
 
@@ -144,9 +190,15 @@ body{
 /*FOOTER STYLING *************/ 
 
 .footer{
-    background: grey; 
-    color: white; 
+    background: grey;
     padding: 3rem 2rem; 
+    width: 100%;
+    height: 25rem;
+    /* margin-bottom: 0; */
+    margin: 0 auto; 
+    align-items: flex-start;
+    padding: 0 3rem;
+    position: absolute; 
 
 }
 
@@ -156,6 +208,8 @@ body{
     flex-wrap: wrap; 
     justify-content: space-between; 
     padding: 0 3rem; 
+    margin-bottom: -5;
+    /* position: absolute; */
 
 }
 
@@ -164,12 +218,22 @@ body{
     flex-direction: column; 
     gap: 0.8rem; 
     text-decoration: none; 
+    padding-left: 1rem;
+    align-items: flex-end; 
+   
 }
 
-.footer_section h2{
+.footer_section h3{
     color: white; 
     text-decoration: none; 
   
+}
+
+.footer_section h2{
+    color: black; 
+    margin: 0;
+    text-align:right; 
+
 }
 
 
@@ -178,15 +242,20 @@ body{
 
 }
 
-.footer_logo img{
-    height: 3rem; 
-    width: auto;
+.footer_logo{
+ height: 3rem;
+ width: auto; 
+ padding: 1rem;
+ align-items: left; 
+ margin-left: -4rem
 }
 
 .footer_section a{
     color: white;
     text-decoration: none; 
     font-size: 1.5rem; 
+    text-align: center; 
+    align-items: center; 
 }
 
 .footer_section:nth-child(2){
@@ -197,4 +266,21 @@ body{
 
 .footer_section:nth-child(3){
     margin-top: -15rem;
+}
+
+.media_icons{
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: left; 
+    gap: 1.5rem; 
+    margin-top: 1rem; 
+    margin-left: -0.01rem; 
+
+
+}
+
+.media_icons a{
+    font-size: 2.5rem;
+    color: white; 
+    
 }
