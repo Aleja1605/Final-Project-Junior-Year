@@ -3,20 +3,25 @@ body{
     font-family: Gotham Book; 
   
     
+    background-image: url("./resources/DSC_7105.bl.f.jpg"); /*links image of columbus downtown as a background to webpage */
+    background-size: cover;
+    background-position: center; 
+    position: relative; 
+    background-repeat: no-repeat; 
 }
 
 
 /*NAVBAR STYLING */ 
  
 .navbar{
-    background: transparent; 
+    background-color: transparent; 
     height: 6rem; 
     top: 0; 
     display: flex;  
     justify-content: center; 
     width: 100%;
-    /* opacity: 0.1; */
-    position: sticky; 
+    /* opacity: 0.7; */
+    position: relative; 
     justify-content: center; 
     /* position: fixed;  */
     
@@ -27,7 +32,7 @@ body{
 .img{
  height: 3rem;
  width: auto; 
- padding: 1rem;
+ /* padding: 2.5rem; */
  align-items: left; 
 }
 
@@ -49,14 +54,18 @@ body{
     list-style: none; 
     align-items: center; 
     justify-content: center; 
+    margin-top: 1.5rem;
+
 }
 
 .nav_links{
     padding-right: 7rem; 
     padding-top: 1rem; 
-    font-size: larger; 
+    font-size: 1.5rem; 
     text-decoration: none; 
     list-style: none;
+    color: white;  
+    font-weight: bolder; 
 
 }
 
@@ -76,7 +85,7 @@ body{
 }
 
 .travel_button{
-    margin-top: 1rem; 
+    margin-top: 1.3rem; 
     height: 3.5rem;
     width: 9rem;
     border-radius: 2.3rem; 
@@ -111,11 +120,6 @@ body{
     
 
 
-    background-image: url("./resources/DSC_7105.bl.f.jpg"); /*links image of columbus downtown as a background to webpage */
-    background-size: cover;
-    background-position: center; 
-    position: relative; 
-    background-repeat: no-repeat; 
 
 }
 
@@ -264,7 +268,8 @@ body{
  width: auto; 
  padding: 1rem;
  align-items: left; 
- margin-left: -4rem
+ margin-left: -4rem;
+
 }
 
 .footer_section:nth-child(2){
