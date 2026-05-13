@@ -9,12 +9,17 @@ body{
 /*NAVBAR STYLING */ 
  
 .navbar{
-    background: transparent;  
+    background: transparent; 
     height: 6rem; 
     top: 0; 
     display: flex;  
     justify-content: center; 
     width: 100%;
+    /* opacity: 0.1; */
+    position: sticky; 
+    justify-content: center; 
+    /* position: fixed;  */
+    
 
     
 }
@@ -147,6 +152,7 @@ body{
     border-radius: 1rem; 
     max-width: 60rem;
     margin: 0 auto; 
+    margin: 0 auto; 
     border-style: groove; 
 }
 
@@ -221,21 +227,30 @@ body{
     gap: 0.8rem; 
     text-decoration: none; 
     padding-left: 1rem;
-    align-items: flex-start; 
+    align-items: center; 
+    text-align: center; 
+
    
 }
 
 .footer_section h3{
     color: white; 
     text-decoration: none; 
+    text-align: center; 
   
 }
 
 .footer_section h2{
-    color: black; 
+    color: white; 
     margin: 0;
-    text-align: right; 
+    /* text-align: right;  */
+    color: navy; 
+    text-align: center; 
 
+}
+
+.footer_section a{
+    text-align: center; 
 }
 
 
