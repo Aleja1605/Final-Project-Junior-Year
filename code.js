@@ -1,14 +1,18 @@
-const items = documentquerySelectorAll(".title"); 
+const cards = document.querySelectorAll(".card"); 
 
-items.forEach((faq) => {
-    faq.addEventListener("click", () => {
-        const card = faq.parentElement; 
-        const answer = card.querySelector("p"); 
-        const icon = faq.querySelector("img"); 
+cards.forEach(card => {
+    const button = card.querySelector(".plus-icon");
 
+    button.addEventListener("click", () => {
+        card.classList.toggle("active"); 
 
-        answer.classList.toggle("hide");
+        if(card.classList.contains("active")){
+            button.src = "./resources/minus.png"; 
 
-        if (a)
-    });
-}); 
+        } 
+        else {
+            button.src = "./resources/add.png";
+
+        }
+    })
+})
