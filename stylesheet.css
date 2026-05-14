@@ -1,13 +1,7 @@
 body{
     margin: 0;
     font-family: Gotham Book; 
-  
-    
-    background-image: url("./resources/DSC_7105.bl.f.jpg"); /*links image of columbus downtown as a background to webpage */
-    background-size: cover;
-    background-position: center; 
-    position: relative; 
-    background-repeat: no-repeat; 
+
 }
 
 
@@ -17,13 +11,14 @@ body{
     background-color: transparent; 
     height: 6rem; 
     top: 0; 
+    left: 0;
     display: flex;  
     justify-content: center; 
     width: 100%;
-    /* opacity: 0.7; */
-    position: relative; 
+    position: absolute; 
     justify-content: center; 
-    /* position: fixed;  */
+    z-index: 10; 
+
     
 
     
@@ -55,21 +50,24 @@ body{
     align-items: center; 
     justify-content: center; 
     margin-top: 1.5rem;
+    gap: 2rem; 
+    margin: 0; 
+    padding: 0;
 
 }
 
 .nav_links{
-    padding-right: 7rem; 
-    padding-top: 1rem; 
+    /* padding-right: 7rem; 
+    padding-top: 1rem;  */
     font-size: 1.5rem; 
     text-decoration: none; 
     list-style: none;
     color: white;  
-    font-weight: bolder; 
+    font-weight: bold; 
 
 }
 
-.nav_item:hover{
+.nav_item a:hover{
     color: #d3222a; 
     transition: all .3s ease-in-out; 
     transform: scale(1.05); 
@@ -85,7 +83,6 @@ body{
 }
 
 .travel_button{
-    margin-top: 1.3rem; 
     height: 3.5rem;
     width: 9rem;
     border-radius: 2.3rem; 
@@ -95,7 +92,7 @@ body{
     font-size: large; 
     text-align: center; 
     align-items: left; 
-    margin-right: 10rem; 
+   
 
 }
 
@@ -111,54 +108,57 @@ body{
 /*HERO STYLING ******************************/ 
 
 .hero{
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    padding-top: 5rem 2rem; 
-    height: 50rem;
-    
+    min-height: 100vh; 
+    width: 100%; 
+
+    background-image: url("./resources/DSC_7105.bl.f.jpg"); /*links image of columbus downtown as a background to webpage */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
+    position: relative; 
+    box-sizing: border-box;  
 
 
 
 }
 
 .hero_content{
-    position: relative; 
-    max-width: 800px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-
-.hero_content h1{
-    background: linear-gradient(to right, black,#d3222a); 
-    -webkit-baackground-clip: text;  
-    background-clip: text; 
-    color: transparent; 
-    font-size: 4rem; 
-    margin-bottom: 6rem;
-    text-align: center; 
-    margin: 0 0 2rem 0; 
-}
 
 .hero_p{
-    color: black; 
+    color: white; 
     font-size: 1.2rem; 
     max-width: 60rem; 
     text-align: center;  
     padding: 0 2rem; 
     line-height: 1.8; 
-    margin: 1 auto 0  auto; 
+    margin: 0  auto; 
 }
 
-.p_wrapper{
-    background-color: white; 
-    padding: 2rem;
-    border-radius: 1rem; 
-    max-width: 60rem;
-    margin: 0 auto; 
-    margin: 0 auto; 
-    border-style: groove; 
+.welcome_box{
+    background: rgba(40,40,40,0.65);
+    padding: 2rem 3rem; 
+    border-radius: 0.5rem; 
+    width: 100%; 
+    max-height: 35rem;
+    backdrop-filter: blur(0.7rem); 
+    text-align: center; 
+    
+
 }
+
+.hero_content h1{
+  color: white; 
+  font-size: 4rem; 
+  margin-top: 1.5rem;
+}
+
+
 
 .hero_content h2{
     color: black; 
@@ -195,11 +195,11 @@ body{
     display: flex;  
     flex-direction: column;  
     margin-top: 2rem; 
-    width: 100%; 
+    width: 55rem; 
     margin: 2rem auto; 
     border-radius: 1rem; 
     overflow: hidden;
-    border-style: groove; 
+    border: 0.06 solid lightgray; 
 }
 
 
