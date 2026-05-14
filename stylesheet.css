@@ -166,6 +166,10 @@ body{
     font-size: 1.9rem; 
 }
 
+.accordeon h2{
+    text-align: center;  
+}
+
 .card{
     display: flex; 
     flex-direction: column;
