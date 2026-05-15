@@ -1,11 +1,16 @@
+*{
+    box-sizing: border-box; 
+}
+
+
 body{
     margin: 0;
     font-family: Gotham Book; 
-
     background-image: url(./resources/Columbus\ May\ 2017-163-20170527.jpg);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
+    overflow-x: hidden;  
 
 }
 
@@ -34,6 +39,9 @@ body{
  width: auto; 
 }
 
+.hamburguer{
+    display: none; 
+}
 #navlogo{
     /* background-size: 100%; */
     display: flex;  
@@ -116,7 +124,7 @@ body{
 
 .hero{
     height: 75rem; 
-    width: auto; 
+    width: 100%; 
 /* 
     background-image: url(./resources/Columbus\ May\ 2017-163-20170527.jpg);
     background-size: cover; 
@@ -126,6 +134,8 @@ body{
     position: relative; 
     box-sizing: border-box;
     padding-bottom: 4rem; 
+    overflow-x: hidden; 
+
 
 
 
@@ -154,10 +164,10 @@ body{
     padding: 2rem 3rem; 
     border-radius: 0.5rem; 
     width: 100%; 
-    height: 18rem;
+    height: auto;
     backdrop-filter: blur(0.7rem); 
     text-align: center; 
-    margin: 36rem auto; 
+    margin: 36rem auto 0 auto; 
     
 
 }
@@ -213,7 +223,7 @@ body{
     transition: all .3s ease-in-out; 
 }
 
-.card.active .card_p{
+.card.active .card_p, .card.active .card_img{
     display: block;
 }
 
@@ -416,6 +426,13 @@ body{
 
     }
 
+    .hamburguer{
+        display: block; 
+        font-size: 2.5rem; 
+        color: white; 
+        cursor: pointer; 
+    }
+
     .travel_button{
         width: 100%; 
         max-width: 12rem; 
@@ -451,7 +468,7 @@ body{
         width: 90%;
     }
 
-    title h3{
+    .title h3{
         font-size: 1.1rem; 
     }
 
